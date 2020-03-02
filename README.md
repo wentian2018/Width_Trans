@@ -6,12 +6,19 @@ https://github.com/wentian2018/Width_Trans/figure/IMG_6A7020413D8E-1.jpeg
 
 
 可以通过设计异步FIFO来实现，
+
 -------FIFO的常见参数--------
+
 FIFO的宽度：即FIFO一次读写操作的数据位；
-FIFO的深度：指的是FIFO可以存储多少个N位的数据（如果宽度为N）。
+
+FIFO的深度：指的是FIFO可以存储多少个N位的数据（如果宽度为N).
+
 满标志：FIFO已满或将要满时由FIFO的状态电路送出的一个信号，以阻止FIFO的写操作继续向FIFO中写数据而造成溢出（overflow）。
+
 空标志：FIFO已空或将要空时由FIFO的状态电路送出的一个信号，以阻止FIFO的读操作继续从FIFO中读出数据而造成无效数据的读出（underflow）。
+
 读时钟：读操作所遵循的时钟，在每个时钟沿来临时读数据。
+
 写时钟：写操作所遵循的时钟，在每个时钟沿来临时写数据。
 ----dualport_ram.v----
 
